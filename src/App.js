@@ -1,4 +1,4 @@
-// import 'rsuite/dist/rsuite.min.css';
+import 'rsuite/dist/styles/rsuite-default.css';
 import SignIn from './pages/SignIn';
 import Home from './pages/Home';
 import './styles/main.scss'
