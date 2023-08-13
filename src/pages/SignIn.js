@@ -8,13 +8,9 @@ const SignIn = () => {
             const {additionalUserInfo,user}=await auth.signInWithPopup(provider)
             if(additionalUserInfo.isNewUser)
             {
-                // set method write data into the database
-                // here we have a json based database
                 await database.ref(`/profile/${user.uid}`).set({
                         name:user.displayName, 
-                        createdAt:firebase.database.ServerValue.TIMESTAMP // static value of timestamp it gives the proper the time wehen the account has been created
-
-
+                        createdAt:firebase.database.ServerValue.TIMESTAMP 
                 })
             }
             Alert.success('Signed In',4000)
