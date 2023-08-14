@@ -17,7 +17,7 @@ function App() {
           <Home/>
         </PrivateRoute>
       </Switch>
-      </ProfileProvider>
+      </ProfileProvider> 
   );
 }
 
